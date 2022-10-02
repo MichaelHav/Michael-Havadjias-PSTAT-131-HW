@@ -1,0 +1,8 @@
+---
+title: "Michael Havadjias PSTAT 131 HW1"
+output: html_document
+date: "2022-09-30"
+---
+
+**Question 1:
+Define supervised and unsupervised learning. What are the difference(s) between them?**
