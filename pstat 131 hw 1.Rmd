@@ -119,9 +119,9 @@ boxplot(hwy~cyl, data = mpg)
  
  
 **Exercise 5:
-Use the corrplot package to make a lower triangle correlation matrix of the mpg dataset. (Hint: You can find information on the package here.)
+Use the corrplot package to make a lower triangle correlation matrix of the mpg dataset. (Hint: You can find information on the package here.)**
 
-Which variables are positively or negatively correlated with which others? Do these relationships make sense to you? Are there any that surprise you?**
+**Which variables are positively or negatively correlated with which others? Do these relationships make sense to you? Are there any that surprise you?**
 
 ```{r} 
 library(corrplot)
@@ -131,18 +131,27 @@ corrplot(corr = cor_mpg_data,method = "circle",type = "lower")
 ```
 
 displ - year : Positive (weak)
+
 displ - cyl : Strong positive
+
 displ - cty : Negative 
+
 displ - hwy : Negative
+
 year - cyl : Positive (weak)
+
 year - cty : Negative (almost no correlation)
+
 year - hwy : Positive (almost no correlation)
+
 cyl - cty : Negative (strong)
+
 cyl - hwy : Negative (strong)
+
 cty - hwy : Positive (strong)
 
 
-Most relationships make sense as they are correlated in a way that makes sense. That is displacement, number of cylinders and highway and city miles per gallon behave in a sensible manner in relation to one another. (eg displacement increases cty and hwy efficiency decreases or number of cylinders increases cty and hwy decrease.). What is a little surprising is the weak correlation between year and cyl as I would expect no correlation or a negative one as smaller engines are becoming more common.
+Most relationships make sense as they are correlated in a way that makes sense. That is, displacement, number of cylinders and highway and city miles per gallon behave in a sensible manner in relation to one another. (eg displacement increases cty and hwy efficiency decreases or number of cylinders increases cty and hwy decrease.). What is a little surprising is the weak correlation between year and cyl as I would expect no correlation or a negative one as smaller engines are becoming more common as years go by.
 
 
 
